@@ -1,0 +1,29 @@
+<p>alumnos works!</p>
+
+
+<h2>Lista de Alumnos</h2>
+
+<table class="table table-bordered border-primary">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>NOMBRE</th>
+      <th>APELLIDO</th>
+      <th>FECHA DE NACIMIENTO</th>
+      <th>DIRECCION</th>
+      <th>CORREO</th>
+      <th>TELEFONO</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of alumnos">
+      <td>{{ item.id }}</td>
+      <td>{{ item.nombres }}</td>
+      <td>{{ item.apellidos }}</td>
+      <td>{{ item.fechaNacimiento }}</td>
+      <td>{{ item.direccion }}</td>
+      <td>{{ item.correo }}</td>
+      <td>{{ item.telefono }}</td>
+    </tr>
+  </tbody>
+</table>
